@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>신년회 겸 민경이 생일파티</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+            background: linear-gradient(135deg, #ffd6e8, #e0f0ff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .party-card {
+            background: white;
+            width: 380px;
+            padding: 30px 25px 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            position: relative;
+        }
+
+        .party-card::before,
+        .party-card::after {
+            content: "🎈";
+            font-size: 40px;
+            position: absolute;
+            top: -20px;
+        }
+
+        .party-card::before {
+            left: 20px;
+        }
+
+        .party-card::after {
+            right: 20px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: #ff5fa2;
+        }
+
+        .info {
+            margin-bottom: 18px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .value {
+            color: #333;
+            font-size: 15px;
+        }
+
+        .btn-wrap {
+            margin-top: 30px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            border: none;
+            color: white;
+            padding: 14px 20px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: 0 8px 15px rgba(255, 117, 140, 0.4);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px rgba(255, 117, 140, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="party-card">
+        <h1>🎉 신년회 겸 민경이 생일파티 🎂</h1>
+
+        <div class="info">
+            <div class="label">모임명</div>
+            <div class="value">신년회 겸 민경이 생일파티</div>
+        </div>
+
+        <div class="info">
+            <div class="label">일자</div>
+            <div class="value">2026년 1월 16일 퇴근 후 접선</div>
+        </div>
+
+        <div class="info">
+            <div class="label">장소</div>
+            <div class="value">서면(?)</div>
+        </div>
+
+        <div class="btn-wrap">
+            <button onclick="attendParty()">참석하시겠습니까?</button>
+        </div>
+    </div>
+
+    <script>
+        function attendParty() {
+            alert('축! 참석');
+        }
+    </script>
+
+</body>
+</html>
